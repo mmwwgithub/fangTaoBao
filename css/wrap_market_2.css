@@ -1,25 +1,27 @@
 .wrap{
-    width:100%;
-    height:630px;
-    /*background: gray;*/
-    margin-top:10px;
-    display:flex; 
-/*    flex:n;*/
+    width:1192px;
+    height:11231px;
+    margin:0 auto;
+    background: #000;
+    border:1px solid purple;
 }
-.wrap .marketDiv{
-    width:100%;
-    height:630px;
-    /*background: gray;*/
-    margin-top:10px;
-    display:flex; 
-    flex-wrap:nowrap;
+.wrap>div:not(.marketDiv){
+  margin-top:10px;
 }
- .market_nav{
-    width:190px;
-    height:520px;
-    /*background: red;*/
-    font-size: 1.4rem;
-}
+
+
+ .wrap .marketDiv{
+  width:1192px;
+  height:632px;
+  background-color: #F4F4F4;
+ }  
+ /*左侧导航*/
+ .wrap .marketDiv .market_nav{
+  width:190px;
+  height:521px;
+  background-color: cyan;
+   font-size: 14px;
+ } 
  .market_nav>ul{
     width:190px;
     height:520px;
@@ -31,8 +33,7 @@
     width:100%;
     height:30px;
     line-height: 30px;
-    /*background: orange;*/
-    border:1px solid green;
+    /*border:1px solid green;*/
     text-align: left;
     padding-left:25px;
     margin-top:2px;
@@ -49,3 +50,143 @@
     text-align: right;
     font-weight: bold;
 }
+ /*右侧轮播图*/
+.marketDiv .market_baner{
+  width:700px;
+  height:510px;
+  background-color: blue;
+  margin-left:10px;
+  margin-top:10px;
+ } 
+.market_baner .lunbotu {
+    width:520px;
+    height:510px;
+}
+ /*轮播图上*/
+.lunbotu .lunbo_top{
+    position: relative;
+    width:520px;
+    height:280px;
+}
+/*上轮播浮动的ul，圆点跟随动画*/
+.lunbotu .lunbo_top .floatUl{   
+    position: absolute;
+    left:50%;
+    bottom:15px;
+    transform: translate(-37px);
+    border-radius: 10px;
+    width:70px;
+    height:15px;
+    background: rgba(255,255,255,.3);
+    display: flex;
+    justify-content: space-around;
+}
+ .lunbotu .lunbo_top .floatUl>li{   
+    float: left;
+    width:8px;
+    height:8px;
+    border-radius: 50%;
+    line-height: 10px;  
+    background: #FFF;
+    margin-top:4px;
+}
+/*轮播图下*/
+.lunbotu .lunbo_bottom{
+    width:520px;
+    height:230px;
+    background: green;
+}
+.lunbotu .lunbo_bottom .lunbo_bottom_nav{
+    width:520px;
+    height:32px;
+}
+ .lunbo_bottom_nav .tmSpan{
+    float:left;
+    width:100%;
+    height:30px;
+    text-align: right;
+    padding-top:13px;
+    background: url(../images/tmLogo.png) no-repeat;
+}
+
+/*下轮播浮动的ul，方框跟随动画*/
+ .lunbo_bottom .lunbo_bottom_nav .floatUl_b{   
+    width:100%;
+    height:3px;
+    background-color:#FF1648;
+    display: flex;
+    justify-content: space-around;
+}
+ .lunbo_bottom .lunbo_bottom_nav .floatUl_b>li{   
+    float: left;
+    width:25%;
+    height:100%; 
+    background: #000;
+}
+ .lunbotu .lunbo_bottom .b_img_div{
+    width:520px;
+    height:198px;
+    /*background-color: red;*/
+    /*border:5px solid yellow;*/
+    border-bottom:none;
+}
+.b_img_div .img_span_L{
+    width:255px;
+    height:198px;
+    background: blue;
+    border:1px solid yellow;
+}
+.b_img_div .img_span_R{
+    width:255px;
+    height:198px;
+    border:1px solid yellow;
+    background: green;
+
+}
+.b_img_div>span>img{
+    margin-top:10px;   
+}
+/*轮播图右边的广告*/
+ .market_baner .guangGao{
+    width:150px;
+    height:510px;
+    background: yellow;
+    margin-left:10px;
+}
+ .guangGao .g_top{
+    width:160px;
+    height:280px;
+}
+
+.guangGao .g_bottom{
+    width:160px;
+    height:230px;
+}
+ .guangGao .g_bottom .p_title{
+    display:block;
+    width:160px;
+    height:32px;
+    font-size: 10px;
+    color:#A1A1A1;
+    padding-top:12px;
+    background: #F1F1F1;
+}
+ .guangGao .g_bottom img{
+    width:160px;
+    height:200px;
+} 
+
+
+/*最右侧登录*/
+ .wrap .marketDiv .market_login{
+  width:289px;
+  height:622px;
+  background-color: gray;
+ }
+ /*下面新闻*/
+ .wrap .marketDiv .market_news{
+  width:891px;
+  height:100px;
+  margin-top:10px;
+  background-color: pink;
+ } 

@@ -18,178 +18,6 @@
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   <style>
  
- /*主体开始*/
-.wrap{
-    width:1192px;
-    height:11231px;
-    margin:0 auto;
-    background: #000;
-    border:1px solid purple;
-}
-.wrap>div:not(.marketDiv){
-  margin-top:10px;
-}
- .wrap .marketDiv{
-  width:1192px;
-  height:632px;
-  background-color: green;
- }  
- .wrap .marketDiv .market_nav{
-  width:190px;
-  height:521px;
-  background-color: cyan;
- } 
- .wrap .marketDiv .market_baner{
-  width:710px;
-  height:521px;
-  background-color: blue;
- } 
- .wrap .marketDiv .market_login{
-  width:289px;
-  height:622px;
-  background-color: gray;
- }
- .wrap .marketDiv .market_news{
-  width:891px;
-  height:100px;
-  margin-top:10px;
-  background-color: pink;
- } 
-.wrap .goodProductDiv{
-  width:1192px;
-  height:658px;
-  margin-top:10px;
-  background-color: pink;
- } 
-.wrap .goodProductDiv .good_L{
-  width:591px;
-  height:658px;
-  /*margin-right:10px;*/
-  background-color: blue;
- } 
-.wrap .goodProductDiv .good_R{
-  width:591px;
-  height:658px;
-  background-color: cyan;
- } 
- /*第四区，淘抢购*/
- .wrap .quickShopDiv{
-  width:1192px;
-  height:265px;
-  margin-top:10px;
-  background-color: pink;
- } 
-.wrap .quickShopDiv .quick_top{
-  width:1192px;
-  height:65px;
-  background-color: blue;
- } 
-.wrap .quickShopDiv .quick_bottom{
-  width:1192px;
-  height:200px;
-  background-color: cyan;
- }
-.wrap .quickShopDiv .quick_bottom>div{
-  height:200px;
-}
-.wrap .quickShopDiv .quick_bottom .shop_L{
-  width:415px;
-  background-color: yellow;
- } 
-.wrap .quickShopDiv .quick_bottom .shop_C{
-  width:400px;
-  background-color: cyan;
- } 
-.wrap .quickShopDiv .quick_bottom .shop_R{
-  width:377px;
-  background-color: purple;
- }  
- /*清仓甩卖区*/
-.wrap .clearShopDiv{
-  width:1192px;
-  height:69px;
-  margin-top:10px;
-  background-color: pink;
- } 
-.wrap .shopRoom{
-  width:1192px;
-  height:538px;
-  margin-top:10px;
-  background-color: pink;
- }
- .wrap .shopRoom>div{
-  width:591px;
-  height:538px;
-  border:20px solid red;
-  box-sizing: border-box;
- }
- .wrap .shopRoom .shop_room{
-  background-color: pink;
- }
-.wrap .shopRoom .shop_room .shop_room_top{
-  width:551px;
-  height:250px;
-  background-color: green;
- }
-.wrap .shopRoom .shop_room .shop_room_bottom{
-  width:551px;
-  height:250px;
-  background-color: blue;
- }
- .wrap .shopRoom .shop_video{
-  background-color: pink;
- }
-.wrap .shopRoom .shop_video .shop_video_top{
-  width:551px;
-  height:250px;
-  background-color: green;
- }
-.wrap .shopRoom .shop_video .shop_video_bottom{
-  width:551px;
-  height:250px;
-  background-color: blue;
- }
- /*时尚爆料王区*/
- .wrap .niceDiv{
-  width:1192px;
-  height:290px;
-  margin-top:10px;
-  background-color: blue;
- }
- .wrap .niceDiv .niceDiv_L{
-  width:840px;
-  height:290px;
-  background-color: gray;
- }
-  .wrap .niceDiv .niceDiv_L_T{
-  width:840px;
-  height:53px;
-  background-color: green;
- }
-.wrap .niceDiv .niceDiv_L_B{
-  width:840px;
-  height:237px;
-  background-color: red;
- }
- .wrap .niceDiv .niceDiv_L_B>div{
-  width:280px;
-  height:237px;
-  background-color: blue;
- }
- .wrap .niceDiv .niceDiv_L_B .niceDiv_LB_l{
-  background-color: pink;
- }
-  .wrap .niceDiv .niceDiv_L_B .niceDiv_LB_c{
-  background-color: yellow;
- }
-  .wrap .niceDiv .niceDiv_L_B .niceDiv_LB_r{
-  background-color: cyan;
- }
-  .wrap .niceDiv .niceDiv_R{
-  width:321px;
-  height:290px;
-  background-color: green;
- }
   </style>
 </head>
 <body>
@@ -381,6 +209,7 @@
           </li>
       </ul>       
      </div>
+     <!-- 市场区 -->
      <div class="market_baner fl">
        <div class="lunbotu fl">
             <div class="lunbo_top fl">
@@ -406,16 +235,16 @@
                  </ul>   
               </div>
               <div class="b_img_div fl">
-                <div class=".img_span_L fl">1
-                  <!-- <img src="../images/b_l.png" alt="轮播图左"> -->
-                </div>
-                <div class="img_span_R fl">2
-                  <!-- <img src="../images/b_r.png" alt="轮播图右"> -->
-                </div>       
+                <span class="img_span_L fl">
+                  <img src="./images/lunbo_b_L.png" alt="轮播图左">
+                </span>
+                <span class="img_span_R fr">
+                  <img src="./images/lunbo_b_R.png" alt="轮播图右">
+                </span>       
               </div>      
             </div>
           </div>
-          <div class="guangGao fl">
+          <div class="guangGao fr">
              <div class="g_top fl">
                 <img src="./images/gg1.png" alt="广告图上">
              </div>
@@ -431,6 +260,8 @@
      <div class="market_login fr"></div>
      <div class="market_news fl"></div>
    </div>
+
+
    <!-- 第三区好货区 -->
    <div class="goodProductDiv fl">
      <div class="good_L fl"></div>
