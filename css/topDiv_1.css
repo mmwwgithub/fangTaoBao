@@ -1,0 +1,274 @@
+@charset="utf-8";
+ /*待布局完再弄.滚动条到底部时出现的搜索*/
+   .searchDiv{
+    display: none;
+    width:100vw;
+    height:55px;
+    background: green;
+   }
+   .searchDiv .tbLogo{
+    float:left;
+    width: 20%;
+    min-width:85px;
+    height:55px;
+    background: #FFF;
+   }
+   .searchDiv .searchInput{
+    float:left;
+    width:630px;
+    height:40px;
+    background:red;
+   }
+
+
+
+ .topDiv{
+  width:100vw;
+  height:187px;
+  clear:both;
+ }  
+ .top_one{
+  width:100vw;
+  height:36px;
+  /*background-color: yellow;*/
+ }  
+ .top_one>ul>li.world_dress_li{
+   color:#3C3C3C;
+}
+.top_one>ul{   
+    float:left;
+    height:36px;
+}
+ .top_one>ul:nth-child(1){
+    width:30%;
+    min-width:250px;
+    /*border:1px solid red;*/
+} 
+ .top_one>ul:nth-child(2){
+    float:right;
+    width:70%;
+    display: flex;
+    /*margin-right:100px;*/
+    justify-content: space-between;
+    max-width:550px;
+} 
+.top_one>ul:nth-child(1)>li{
+    float:left;
+    width:25%;
+    height:36px;
+    line-height: 36px;
+    /*border:1px solid red;*/
+}
+.top_one>ul:nth-child(1)>li:nth-child(1)::after {
+    content:'\21E9';
+    font-size: 15px;
+}
+/*中国大陆*/
+.top_one>ul:nth-child(1)>li:nth-child(1)>ul{
+    display: none;
+    position: absolute;
+    left:0;
+    top:40px;
+    width:290px;
+    height:290px;
+    border:1px solid gray;
+    text-align:left;
+    background-color: #FFF;
+    overflow:auto;
+    /*font-family:"方正大标宋繁体";*/
+    border-top:none;
+}
+.top_one>ul:nth-child(1)>li:nth-child(1):hover{
+    background-color:#FFF;
+}
+/*中国大陆弹出*/
+.top_one>ul:nth-child(1)>li:nth-child(1):hover>ul{
+    display:block;
+}
+/*亲，请登录*/
+ .top_one>ul:nth-child(1)>li:nth-child(2) a{
+    color:red;
+}
+ .top_one>ul:nth-child(2) li{
+    float:left;
+    height:36px;
+    line-height:36px;
+}
+
+ /*搜索框行*/
+ .top_search{
+  width:100vw;
+  height:121px;
+  /*background-color: blue;*/
+ }  
+ .top_search>span{
+    float:left;
+    height:122px;
+}
+.top_search>span:nth-child(1){
+    width:25%;
+    /*height:120px;*/
+    text-align:center;
+    /*background: yellow;*/
+}
+/*淘宝logo图*/
+/*.top_search>span:nth-child(1) img{
+    width:100%;
+    height:100%;
+}*/
+.top_search>span:nth-child(2){
+    width:50%;
+}
+.top_search>span:nth-child(2) .top_c_span_ul{
+    float:left;
+    width:100%;
+    /*height:110px;*/
+    text-align:center;
+    /*background: blue;*/
+    /*border:3px solid cyan;*/
+}
+.top_search>span:nth-child(2) .top_c_span_ul>li{
+    float:left;
+    width:100%;
+/*    height:25px;*/
+    /*border:1px solid red;*/
+}
+.top_search>span:nth-child(2) .top_c_span_ul .span_tow_li_one{
+    height:46px;
+    /*text-align:center;*/
+    /*background: pink;*/
+}
+.top_search>span:nth-child(2) .top_c_span_ul .span_tow_li_one>ul{
+    width:100%;
+    height:23px;
+    margin-top:23px;
+    /*border:1px solid red;*/
+}
+.top_search>span:nth-child(2) .top_c_span_ul .span_tow_li_one>ul>li{
+    float:left;
+    width:40px;
+    height:23px;
+    line-height: 23px;
+    color:#FF4400;
+    /*background-color: gray;*/
+    /*border:1px solid blue;*/
+}
+.top_search>span:nth-child(2) .top_c_span_ul .span_tow_li_one>ul>li>a{
+    color:#FF4400;
+}
+.top_search>span:nth-child(2) .top_c_span_ul .span_tow_li_one>ul>li:first-child{
+    background-color: #FF5500;
+    color:#FFF;
+    border-radius: 5px 5px 0 0;
+    margin-left:18px;
+}
+/*搜索框*/
+.top_search>span:nth-child(2) .top_c_span_ul .span_tow_li_two{
+    position: relative;
+    width:90%;
+    height:39px;
+    border:2px solid #FF5000;
+    border-radius: 20px 0 0 20px;
+}
+.top_search>span:nth-child(2) .top_c_span_ul .span_tow_li_two>input{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    line-height:40px;
+    border:none;
+    color:#9C9C9C;
+    border-radius: 20px 0 0 20px;
+    padding-left:12px;
+    font-family:SimSun,'宋体', sans-serif;
+}
+/*Input placeholder属性样式修改*/
+.top_search>span:nth-child(2) .top_c_span_ul .span_tow_li_two>input::-webkit-input-placeholder {
+         color: #9C9C9C;
+     }
+/*搜索框后的搜索按钮*/
+.top_search>span:nth-child(2) .top_c_span_ul .span_tow_li_two::after{
+    position:absolute;
+    top:-2px;
+    right:-10%;
+    content:"搜索";
+    color:#FFF;
+    width:75px;
+    height:100%;
+    line-height:38px;
+    font-size:1.5rem;
+    background-color: #FF5000;
+    border:2px solid #FF5000;
+    border-radius:0 20px 20px 0;
+    font-weight: bold;
+}
+
+.top_search>span:nth-child(2) .top_c_span_ul .span_tow_li_three{
+    height:35px;
+    text-align:center;
+}
+.top_search>span:nth-child(2) .top_c_span_ul .span_tow_li_three>ul{
+    width:100%;
+    height:35px;
+    /*border:1px solid red;*/
+    display: flex;
+    justify-content: space-between;
+}
+.top_search>span:nth-child(2) .top_c_span_ul .span_tow_li_three>ul>li{
+    line-height: 29px;
+}
+.top_search>span:nth-child(3){
+    width:25%;
+    min-width:200px;
+    height:120px;
+}
+.top_search>span:nth-child(3) img{
+    margin-left: 108px;
+    margin-top:24px;
+}
+.top_search>span:nth-child(3)>img::before{
+    position:absolute;
+    top:0;
+    left:0;
+    content:"X";
+    width:1rem;
+    height:10px;
+    background: red;
+}
+
+.top_nav{
+   width:100%;
+   height:30px;   
+   line-height: 30px;
+   font-size: 16px;
+   font-weight: bold;
+   background-color: #FF7100;
+   color:#FFF;
+   text-align:center;
+   /*border:2px solid blue;*/
+}
+ .top_nav>dl{
+   width:1190px;
+   height:100%;
+   display: flex;
+   margin:0 auto;
+  /* justify-content: space-between;*/
+}
+.top_nav>dl>dt{
+   width:190px;
+   height:100%;   
+   /*border:1px solid yellow;*/
+   background-color: #FF5000;
+}
+.top_nav>dl>dd{
+   float: left;
+   /*width:30px;*/
+   height:100%; 
+   /*border:1px solid yellow;*/
+   background-color: #FF7100;
+   margin-left: 5px;
+}
+.top_nav>dl>dd>a{
+   color:#FFF;
+}

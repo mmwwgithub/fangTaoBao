@@ -1,0 +1,27 @@
+@charset="utf-8";
+/*    <div class="affordableDiv">
+    <p class="affordable_top"></p>
+    <p class="affordable_bottom">
+      <span class="affordable_bottom_one"></span>
+      <span class="affordable_bottom_two"></span>
+      <span class="affordable_bottom_three"></span>
+      <span class="affordable_bottom_four"></span>
+    </p>
+</div> */
+.wrap .affordableDiv{
+	width: 1190px;
+	height:250px;
+	border:1px solid #000;
+	margin-top:10px;
+}
+.wrap .affordableDiv .affordable_top{
+	width: 1190px;
+	height:50px;
+	background: red;
+}
+.wrap .affordableDiv .affordable_bottom{
+	width: 1190px;
+	height:200px;
+	background: blue;
+	
+}

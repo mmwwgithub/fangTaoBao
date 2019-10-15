@@ -1,0 +1,19 @@
+/*   <div class="endDiv">
+       <div class="end_head"></div>
+       <div class="end_foot"></div>
+   </div>*/
+.wrap .endDiv{
+	width:1190px;
+	height:535px;
+	background: blue;
+}
+.wrap .endDiv .end_head{
+	width:1190px;
+	height:260px;
+	background: url('../images/end.png') no-repeat;
+}
+.wrap .endDiv .end_foot{
+	width:1190px;
+	height:270px;
+	background: orange;
+}

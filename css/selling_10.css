@@ -1,0 +1,95 @@
+@charset="utf-8";
+/*  <div class="sellingDiv fl">
+      <div class="selling_top">
+        <dl>
+          <dt>热卖单品</dt>
+          <dd>123</dd>
+          <dd>123</dd>
+          <dd>123</dd>
+          <dd>123</dd>
+          <dd>123</dd>
+        </dl>
+      </div>
+      <div class="selling_center">
+        <ul>
+          <li><a href="#"><img src="" alt=""></a></li>
+          <li><a href="#"><img src="" alt=""></a></li>
+          <li><a href="#"><img src="" alt=""></a></li>
+          <li><a href="#"><img src="" alt=""></a></li>
+          <li><a href="#"><img src="" alt=""></a></li>
+          <li><a href="#"><img src="" alt=""></a></li>
+          <li><a href="#"><img src="" alt=""></a></li>
+          <li><a href="#"><img src="" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="selling_bottom">
+        <span class="selling_bottom_L"><img src="" alt=""></span>
+        <span class="selling_bottom_C"><img src="" alt=""></span>
+        <span class="selling_bottom_R"><img src="" alt=""></span>
+      </div>
+   </div> */
+.wrap .sellingDiv{
+	width:1190px;
+	height:960px;
+	border:1px solid red;
+}
+.wrap .sellingDiv .selling_top{
+	width:1190px;
+	height:90px;
+	background: blue;
+}
+.wrap .sellingDiv .selling_top>dl{
+	width:1190px;
+	height:90px;
+}
+.wrap .sellingDiv .selling_top>dl>dt{
+	width:1190px;
+	height:45px;
+	line-height: 45px;
+	background: pink;
+}
+.wrap .sellingDiv .selling_top>dl>dd{
+	float:left;
+	width:40px;
+	height:45px;
+	line-height: 45px;
+	background: blue;
+}
+.wrap .sellingDiv .selling_center{
+	width:1190px;
+	height:700px;
+	background: cyan;
+}
+.wrap .sellingDiv .selling_center>ul{
+	width:1190px;
+	height:700px;
+}
+.wrap .sellingDiv .selling_center>ul>li{
+	float:left;
+	width:238px;
+	height:350px;
+	border:1px solid yellow;
+	border-left:none;
+	border-top:none;
+}
+.wrap .sellingDiv .selling_bottom{
+	width:1190px;
+	height:170px;
+	background: green;
+	border:20px solid orange;
+}
+.wrap .sellingDiv .selling_bottom .selling_bottom_L{
+	width:375px;
+	height:130px;
+	background: green;
+}
+.wrap .sellingDiv .selling_bottom .selling_bottom_C{
+	width:400px;
+	height:130px;
+	background: blue;
+}
+.wrap .sellingDiv .selling_bottom .selling_bottom_R{
+	width:375px;
+	height:130px;
+	background: green;
+}

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>仿淘宝首页</title>
+	<link type="text/css" rel="stylesheet" href="css/MT_css_reset.css">
+	<!-- <link type="text/css" rel="stylesheet" href="css/PC_css_reset.css"> -->
+  <link type="text/css" rel="stylesheet" href="css/index.css">
+  <link type="text/css" rel="stylesheet" href="css/topDiv_1.css">
+  <link type="text/css" rel="stylesheet" href="css/wrap_market_2.css">
+  <link type="text/css" rel="stylesheet" href="css/quality_8.css">
+  <link type="text/css" rel="stylesheet" href="css/affordable_9.css">
+  <link type="text/css" rel="stylesheet" href="css/selling_10.css">
+  <link type="text/css" rel="stylesheet" href="css/like_11.css">
+	<link type="text/css" rel="stylesheet" href="css/end_12.css">
+
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <style>
+ 
+ /*主体开始*/
+.wrap{
+    width:1192px;
+    height:11231px;
+    margin:0 auto;
+    background: #000;
+    border:1px solid purple;
+}
+.wrap>div:not(.marketDiv){
+  margin-top:10px;
+}
+ .wrap .marketDiv{
+  width:1192px;
+  height:632px;
+  background-color: green;
+ }  
+ .wrap .marketDiv .market_nav{
+  width:190px;
+  height:521px;
+  background-color: cyan;
+ } 
+ .wrap .marketDiv .market_baner{
+  width:710px;
+  height:521px;
+  background-color: blue;
+ } 
+ .wrap .marketDiv .market_login{
+  width:289px;
+  height:622px;
+  background-color: gray;
+ }
+ .wrap .marketDiv .market_news{
+  width:891px;
+  height:100px;
+  margin-top:10px;
+  background-color: pink;
+ } 
+.wrap .goodProductDiv{
+  width:1192px;
+  height:658px;
+  margin-top:10px;
+  background-color: pink;
+ } 
+.wrap .goodProductDiv .good_L{
+  width:591px;
+  height:658px;
+  /*margin-right:10px;*/
+  background-color: blue;
+ } 
+.wrap .goodProductDiv .good_R{
+  width:591px;
+  height:658px;
+  background-color: cyan;
+ } 
+ /*第四区，淘抢购*/
+ .wrap .quickShopDiv{
+  width:1192px;
+  height:265px;
+  margin-top:10px;
+  background-color: pink;
+ } 
+.wrap .quickShopDiv .quick_top{
+  width:1192px;
+  height:65px;
+  background-color: blue;
+ } 
+.wrap .quickShopDiv .quick_bottom{
+  width:1192px;
+  height:200px;
+  background-color: cyan;
+ }
+.wrap .quickShopDiv .quick_bottom>div{
+  height:200px;
+}
+.wrap .quickShopDiv .quick_bottom .shop_L{
+  width:415px;
+  background-color: yellow;
+ } 
+.wrap .quickShopDiv .quick_bottom .shop_C{
+  width:400px;
+  background-color: cyan;
+ } 
+.wrap .quickShopDiv .quick_bottom .shop_R{
+  width:377px;
+  background-color: purple;
+ }  
+ /*清仓甩卖区*/
+.wrap .clearShopDiv{
+  width:1192px;
+  height:69px;
+  margin-top:10px;
+  background-color: pink;
+ } 
+.wrap .shopRoom{
+  width:1192px;
+  height:538px;
+  margin-top:10px;
+  background-color: pink;
+ }
+ .wrap .shopRoom>div{
+  width:591px;
+  height:538px;
+  border:20px solid red;
+  box-sizing: border-box;
+ }
+ .wrap .shopRoom .shop_room{
+  background-color: pink;
+ }
+.wrap .shopRoom .shop_room .shop_room_top{
+  width:551px;
+  height:250px;
+  background-color: green;
+ }
+.wrap .shopRoom .shop_room .shop_room_bottom{
+  width:551px;
+  height:250px;
+  background-color: blue;
+ }
+ .wrap .shopRoom .shop_video{
+  background-color: pink;
+ }
+.wrap .shopRoom .shop_video .shop_video_top{
+  width:551px;
+  height:250px;
+  background-color: green;
+ }
+.wrap .shopRoom .shop_video .shop_video_bottom{
+  width:551px;
+  height:250px;
+  background-color: blue;
+ }
+ /*时尚爆料王区*/
+ .wrap .niceDiv{
+  width:1192px;
+  height:290px;
+  margin-top:10px;
+  background-color: blue;
+ }
+ .wrap .niceDiv .niceDiv_L{
+  width:840px;
+  height:290px;
+  background-color: gray;
+ }
+  .wrap .niceDiv .niceDiv_L_T{
+  width:840px;
+  height:53px;
+  background-color: green;
+ }
+.wrap .niceDiv .niceDiv_L_B{
+  width:840px;
+  height:237px;
+  background-color: red;
+ }
+ .wrap .niceDiv .niceDiv_L_B>div{
+  width:280px;
+  height:237px;
+  background-color: blue;
+ }
+ .wrap .niceDiv .niceDiv_L_B .niceDiv_LB_l{
+  background-color: pink;
+ }
+  .wrap .niceDiv .niceDiv_L_B .niceDiv_LB_c{
+  background-color: yellow;
+ }
+  .wrap .niceDiv .niceDiv_L_B .niceDiv_LB_r{
+  background-color: cyan;
+ }
+  .wrap .niceDiv .niceDiv_R{
+  width:321px;
+  height:290px;
+  background-color: green;
+ }
+  </style>
+</head>
+<body>
+  <!-- 固定搜索框 -->
+    <div class="searchDiv f ">
+        <span class="tbLogo fl"><img src="./images/xtbLogo.png" alt="固定淘宝小logo"></span>
+        <span class="searchInput fl">
+          <input type="text">
+       </span>
+    </div> 
+ <div class="topDiv">
+     <div class="top_one fl">
+       <ul>
+         <li class="world_dress_li">
+            中国大陆
+           <ul>
+             <li>全球</li>
+             <li>中國大陸</li>
+             <li>中國香港</li>
+             <li>中國台灣</li>
+             <li>中國澳門</li>
+             <li>韓國</li>
+             <li>馬來西亞</li>
+             <li>澳大利亞</li>
+             <li>新加坡</li>
+             <li>新西蘭</li>
+             <li>加拿大</li>
+             <li>美國</li>
+             <li>日本</li>
+           </ul>
+          </li>
+          <li><a href="">亲，请登录</a></li>
+          <li><a href="">免费注册</a></li>
+          <li><a href="">手机淘宝网</a></li>
+        </ul>
+        <ul>
+          <li><a href="">我的淘宝</a></li>
+          <li><a href="">购物车</a></li>
+          <li><a href="">收藏夹</a></li>
+          <li><a href="">商品分类</a></li>
+          <li>|</li>
+          <li><a href="">千牛卖家中心</a></li>
+          <li><a href="">联系客服</a></li>
+          <li><a href="">网站导航</a></li>
+        </ul>
+     </div>
+     <div class="top_search fl">
+        <span>
+            <img src="./images/logo.png" alt="">
+          </span>
+          <span>
+            <ul class="top_c_span_ul">
+              <li class="span_tow_li_one">
+                  <ul>
+                    <li>宝贝</li>
+                    <li><a href="">天猫</a></li>
+                    <li><a href="">店铺</a></li>
+                  </ul>
+              </li>
+              <li class="span_tow_li_two">
+              <input type="text" placeholder="搜索" />
+              </li>
+              <li class="span_tow_li_three">
+                 <ul>
+                  <li><a href="">新款连衣裙</a></li>
+                  <li><a href="">四件套</a></li>
+                  <li><a href="">潮流T恤</a></li>
+                  <li><a href="">时尚女鞋</a></li>
+                  <li><a href="">短裤</a></li>
+                  <li><a href="">半身裙</a></li>
+                  <li><a href="">男士外套</a></li>
+                  <li><a href="">墙纸</a></li>
+                  <li><a href="">行车记录仪</a></li>
+                  <li><a href="">新款男鞋</a></li>
+                  <li><a href="">耳机</a></li>
+                  <li><a href="">时尚女包</a></li>
+                  <li><a href="">沙发</a></li>
+                 </ul>
+              </li>
+            </ul>
+          </span>
+          <span>
+             <img src="./images/ewm.png" alt="二维码">
+          </span>
+     </div>
+     <div class="top_nav fl">
+        <dl>
+          <dt>主题市场</dt>
+           <dd><a href="">天猫</a></dd>
+           <dd><a href="">聚划算</a></dd>
+           <dd><a href="">天猫超市</a></dd>
+           <dd><a href="">|</a></dd>
+           <dd><a href="">淘抢购</a></dd>
+           <dd><a href="">电器城</a></dd>
+           <dd><a href="">司法拍卖</a></dd>
+           <dd><a href="">淘宝心选</a></dd>
+           <dd><a href="">兴农扶贫</a></dd>
+           <dd><a href="">|</a></dd>
+           <dd><a href="">飞猪旅行</a></dd>
+           <dd><a href="">智能生活</a></dd>
+           <dd><a href="">苏宁易购</a></dd>
+           <dd><a href="">云栖大会</a></dd>
+          </dl>
+     </div>
+   </div>
+<div class="wrap .clearfloat">  
+   <div class="marketDiv">
+     <div class="market_nav fl">
+       <ul>
+          <li>
+            <a href="">女装/</a>
+            <a href="">男装/</a>
+            <a href="">内衣</a>
+          </li>
+          <li>
+            <a href="">鞋靴/</a>
+            <a href="">箱包/</a>
+            <a href="">配件</a>
+          </li>
+          <li>
+            <a href="">童装玩具/</a>
+            <a href="">孕产/</a>
+            <a href="">用品</a>
+          </li>
+          <li>
+            <a href="">家电/</a>
+            <a href="">数码/</a>
+            <a href="">手机</a>
+          </li>
+          <li>
+            <a href="">美妆/</a>
+            <a href="">洗护/</a>
+            <a href="">保健品</a>
+          </li>
+          <li>
+            <a href="">珠宝/</a>
+            <a href="">眼镜/</a>
+            <a href="">手表</a>
+          </li>
+          <li>
+            <a href="">运动/</a>
+            <a href="">户外/</a>
+            <a href="">乐器</a>
+          </li>
+          <li>
+            <a href="">游戏/</a>
+            <a href="">动漫/</a>
+            <a href="">影视</a>
+          </li>
+          <li>
+            <a href="">美食/</a>
+            <a href="">生鲜/</a>
+            <a href="">零食</a>
+          </li>
+          <li>
+            <a href="">鲜花/</a>
+            <a href="">宠物/</a>
+            <a href="">农资</a>
+          </li>
+          <li>
+            <a href="">工具/</a>
+            <a href="">装修/</a>
+            <a href="">建材</a>
+          </li>
+          <li>
+            <a href="">家具/</a>
+            <a href="">家饰/</a>
+            <a href="">家纺</a>
+          </li>
+          <li>
+            <a href="">汽车/</a>
+            <a href="">二手车/</a>
+            <a href="">用品</a>
+          </li>
+          <li>
+            <a href="">办公/</a>
+            <a href="">DIY/</a>
+            <a href="">五金电子</a>
+          </li>
+          <li>
+            <a href="">百货/</a>
+            <a href="">餐厨/</a>
+            <a href="">家庭保健</a>
+          </li>
+          <li>
+            <a href="">学习/</a>
+            <a href="">卡券/</a>
+            <a href="">本地服务</a>
+          </li>
+      </ul>       
+     </div>
+     <div class="market_baner fl">
+       <div class="lunbotu fl">
+            <div class="lunbo_top fl">
+              <img src="./images/lunBoImg/1.webp" alt="轮播图上">
+              <ul class="floatUl">
+                 <li></li>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+                 <li></li>
+               </ul> 
+            </div>
+            <div class="lunbo_bottom fl">
+               <div class="lunbo_bottom_nav fl">
+                 <span class="tmSpan"> 1/6</span>
+                 <ul class="floatUl_b fl">
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                   <li></li>
+                 </ul>   
+              </div>
+              <div class="b_img_div fl">
+                <div class=".img_span_L fl">1
+                  <!-- <img src="../images/b_l.png" alt="轮播图左"> -->
+                </div>
+                <div class="img_span_R fl">2
+                  <!-- <img src="../images/b_r.png" alt="轮播图右"> -->
+                </div>       
+              </div>      
+            </div>
+          </div>
+          <div class="guangGao fl">
+             <div class="g_top fl">
+                <img src="./images/gg1.png" alt="广告图上">
+             </div>
+             
+             <div class="g_bottom fl">  
+                <p class="p_title fl">
+                    今日热卖
+                </p>             
+               <img src="./images/gg2.png" alt="广告图">
+             </div>
+          </div>
+     </div>
+     <div class="market_login fr"></div>
+     <div class="market_news fl"></div>
+   </div>
+   <!-- 第三区好货区 -->
+   <div class="goodProductDiv fl">
+     <div class="good_L fl"></div>
+     <div class="good_R fr"></div>
+   </div>
+    <!-- 第四区淘抢购 -->
+   <div class="quickShopDiv fl">
+     <div class="quick_top fl">  
+     tao    
+     </div>
+     <div class="quick_bottom fl">
+       <div class="shop_L fl"></div>
+       <div class="shop_C fl"></div>
+       <div class="shop_R fl"></div>
+     </div>    
+   </div>
+   <!-- 第五区甩卖清仓区 -->
+   <div class="clearShopDiv fl">甩卖清仓区</div>
+   <!-- 第六区好店和直播 -->
+   <div class="shopRoom fl">
+     <div class="shop_room fl">
+       <div class="shop_room_top"></div>
+       <div class="shop_room_bottom"></div>
+     </div>
+     <div class="shop_video fr">
+       <div class="shop_video_top"></div>
+       <div class="shop_video_bottom"></div>
+     </div>
+   </div>
+   <!-- 第七区时尚爆料王区 -->
+   <div class="niceDiv fl">
+     <div class="niceDiv_L fl">
+       <div class="niceDiv_L_T fl"></div>
+         <div class="niceDiv_L_B .fl">
+            <div class="niceDiv_LB_l fl"></div>
+            <div class="niceDiv_LB_c fl"></div>
+            <div class="niceDiv_LB_r fl"></div>
+         </div>       
+     </div>
+     <div class="niceDiv_R fr">单图</div>
+   </div>
+ <!-- 第八区品质生活家 -->
+   <div class="qualityDiv fl">
+     <span class="quality_L fl">
+       <ul class="quality_ul_L fl">
+         <li><a href=""><img src="" alt=""></a></li>
+         <li><a href=""><img src="" alt=""></a></li>
+         <li><a href=""><img src="" alt=""></a></li>
+         <li><a href=""><img src="" alt=""></a></li>
+       </ul>
+       <ul class="quality_ul_R fr">
+         <li><a href=""><img src="" alt=""></a></li>
+         <li><a href=""><img src="" alt=""></a></li>
+         <li><a href=""><img src="" alt=""></a></li>
+         <li><a href=""><img src="" alt=""></a></li>
+       </ul>
+     </span>   
+     <span class="quality_R fr">
+       <ul class="quality_ul_L fl">
+         <li><a href=""><img src="" alt=""></a></li>
+         <li><a href=""><img src="" alt=""></a></li>
+         <li><a href=""><img src="" alt=""></a></li>
+         <li><a href=""><img src="" alt=""></a></li>
+       </ul>
+       <ul class="quality_ul_R fr">
+         <li><a href=""><img src="" alt=""></a></li>
+         <li><a href=""><img src="" alt=""></a></li>
+         <li><a href=""><img src="" alt=""></a></li>
+         <li><a href=""><img src="" alt=""></a></li>
+       </ul>
+     </span>
+   </div>
+ <!-- 第九区实惠专业户 -->
+   <div class="affordableDiv fl">
+       <p class="affordable_top">实惠专业户</p>
+       <p class="affordable_bottom">
+         <span class="affordable_bottom_one"></span>
+         <span class="affordable_bottom_two"></span>
+         <span class="affordable_bottom_three"></span>
+         <span class="affordable_bottom_four"></span>
+       </p>
+   </div>
+    <!-- 第十区热卖单品 -->
+   <div class="sellingDiv fl">
+      <div class="selling_top">
+        <dl>
+          <dt>热卖单品</dt>
+          <dd>123</dd>
+          <dd>123</dd>
+          <dd>123</dd>
+          <dd>123</dd>
+          <dd>123</dd>
+        </dl>
+      </div>
+      <div class="selling_center">
+        <ul>
+          <li><a href="#"><img src="" alt="1"></a></li>
+          <li><a href="#"><img src="" alt="1"></a></li>
+          <li><a href="#"><img src="" alt="1"></a></li>
+          <li><a href="#"><img src="" alt="1"></a></li>
+          <li><a href="#"><img src="" alt="1"></a></li>
+          <li><a href="#"><img src="" alt="1"></a></li>
+          <li><a href="#"><img src="" alt="1"></a></li>
+          <li><a href="#"><img src="" alt="1"></a></li>
+          <li><a href="#"><img src="" alt="1"></a></li>
+          <li><a href="#"><img src="" alt="1"></a></li>
+        </ul>
+      </div>
+      <div class="selling_bottom">
+        <span class="selling_bottom_L fl"><img src="" alt=""></span>
+        <span class="selling_bottom_C fl"><img src="" alt=""></span>
+        <span class="selling_bottom_R fr"><img src="" alt=""></span>
+      </div>
+   </div>
+   <!-- 十一区 猜你喜欢 -->
+   <div class="likeDiv">
+     <dt>
+       <dd>111</dd>
+       <dd>111</dd>
+       <dd>111</dd>
+       <dd>111</dd>
+       <dd>111</dd>
+     </dt>
+   </div>
+   <div class="endDiv fl">
+       <div class="end_head"></div>
+       <div class="end_foot"></div>
+   </div>
+  
+
+</div>
+
+
+
+
+
+  <div class="aaa fl">
+  占位调试
+  </div>
+
+
+</body>
+</html>

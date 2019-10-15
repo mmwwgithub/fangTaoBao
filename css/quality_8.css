@@ -1,0 +1,49 @@
+@charset="utf-8";
+/*
+ 第八区品质生活家的css
+ */
+.wrap .qualityDiv{
+   width:1192px;
+   height:767px;
+   margin-top:10px;
+}
+.wrap .qualityDiv>span{
+	width: 591px;
+	height:767px;
+}
+.wrap .quality_L{
+   background: pink;
+}
+.wrap .qualityDiv .quality_ul_L{
+	width: 296px;
+	height:767px;
+	background: red;
+}
+.wrap .qualityDiv .quality_ul_R{
+	width: 295px;
+	height:767px;
+	background: orange;
+}
+/* .wrap .quality_ul_L{
+	width: 296px;
+	height:767px;
+	background: red;
+}
+.wrap .quality_ul_R{
+	width: 295px;
+	height:767px;
+	background:orange;
+} */
+.wrap .quality_R{
+   background: blue;
+}
+/*.wrap .quality_R .quality_L_ul_L{
+	width: 296px;
+	height:767px;
+	background: red;
+}
+.wrap .quality_R .quality_L_ul_R{
+	width: 295px;
+	height:767px;
+	background:orange;
+}*/
